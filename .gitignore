@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+.env
+
+backend_fastapi/.venv/
+
+frontend_movil/build/
+frontend_movil/.dart_tool/
+frontend_movil/.idea/
+frontend_movil/.vscode/
