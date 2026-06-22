@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 
 from app.agents.semantic_search_agent import SemanticSearchAgent
 from app.database.session import get_db
+from app.repositories.knowledge_repository import KnowledgeRepository
 from app.repositories.medicine_repository import MedicineRepository
 from app.schemas.search import AgentSearchResponse
 from app.services.search_engine import SemanticMedicineSearchEngine
@@ -17,5 +18,5 @@ def agent_search(
     db: Session = Depends(get_db),
 ) -> AgentSearchResponse:
     search_engine = SemanticMedicineSearchEngine(MedicineRepository(db))
-    agent = SemanticSearchAgent(search_engine)
+    agent = SemanticSearchAgent(search_engine, KnowledgeRepository(db))
     return AgentSearchResponse(**agent.answer(q))

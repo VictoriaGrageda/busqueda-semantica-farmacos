@@ -1,0 +1,37 @@
+[
+  {
+    "codigo": "prototipo_academico",
+    "nombre": "Base de conocimiento academica del prototipo",
+    "tipo": "prototipo",
+    "descripcion": "Datos iniciales usados para validar la arquitectura de busqueda semantica y agente.",
+    "estado": "datos_de_prueba"
+  },
+  {
+    "codigo": "vademecum",
+    "nombre": "Vademecum Farmaceutico",
+    "tipo": "fuente_referencia",
+    "descripcion": "Fuente prevista para alimentar la base de conocimiento farmacologica.",
+    "estado": "pendiente_de_carga"
+  },
+  {
+    "codigo": "liname",
+    "nombre": "Lista Nacional de Medicamentos Esenciales",
+    "tipo": "fuente_oficial",
+    "descripcion": "Fuente prevista para contextualizar medicamentos esenciales.",
+    "estado": "pendiente_de_carga"
+  },
+  {
+    "codigo": "ftn",
+    "nombre": "Formulario Terapeutico Nacional",
+    "tipo": "fuente_oficial",
+    "descripcion": "Fuente prevista para ampliar informacion terapeutica.",
+    "estado": "pendiente_de_carga"
+  },
+  {
+    "codigo": "agemed",
+    "nombre": "AGEMED",
+    "tipo": "fuente_oficial",
+    "descripcion": "Fuente prevista para informacion regulatoria y contextual del mercado boliviano.",
+    "estado": "pendiente_de_carga"
+  }
+]

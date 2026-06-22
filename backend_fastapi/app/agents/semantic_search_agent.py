@@ -1,29 +1,46 @@
 from typing import Any
 
+from app.repositories.knowledge_repository import KnowledgeRepository
 from app.services.query_analyzer import QueryAnalyzer
 from app.services.search_engine import SemanticMedicineSearchEngine
 
 
 class SemanticSearchAgent:
-    def __init__(self, search_engine: SemanticMedicineSearchEngine) -> None:
+    def __init__(
+        self,
+        search_engine: SemanticMedicineSearchEngine,
+        knowledge_repository: KnowledgeRepository,
+    ) -> None:
         self._search_engine = search_engine
+        self._knowledge_repository = knowledge_repository
         self._query_analyzer = QueryAnalyzer()
 
     def answer(self, query: str) -> dict[str, Any]:
         search_response = self._search_engine.search(query)
         intent = self._query_analyzer.detect_intent(query)
         results = search_response["resultados"]
+        context_relations = self._get_context_relations(results)
 
         return {
             **search_response,
             "tipo_consulta": intent,
             "respuesta_agente": self._build_answer(intent, results),
+            "relaciones_contexto": context_relations,
             "recomendaciones": self._build_recommendations(intent),
             "advertencia": (
                 "Informacion de apoyo academico. No reemplaza la revision de fuentes "
                 "oficiales, bibliografia farmacologica ni criterio profesional."
             ),
         }
+
+    def _get_context_relations(self, results: list[dict[str, Any]]) -> list[dict]:
+        if not results:
+            return []
+
+        top_result = results[0]
+        return self._knowledge_repository.find_relations_for_origin(
+            origin=top_result["medicamento"]
+        )
 
     def _build_answer(self, intent: str, results: list[dict[str, Any]]) -> str:
         if not results:

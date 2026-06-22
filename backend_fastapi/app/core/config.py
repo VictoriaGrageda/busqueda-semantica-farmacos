@@ -3,6 +3,10 @@ import os
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 KNOWLEDGE_BASE_PATH = PROJECT_ROOT / "base_conocimiento" / "data" / "medicamentos.json"
+KNOWLEDGE_SOURCES_PATH = PROJECT_ROOT / "base_conocimiento" / "data" / "fuentes.json"
+SEMANTIC_RELATIONS_PATH = (
+    PROJECT_ROOT / "base_conocimiento" / "data" / "relaciones_farmacologicas.json"
+)
 
 API_TITLE = "Agente de busqueda semantico farmacologico"
 API_DESCRIPTION = "API para busqueda de informacion farmacologica."

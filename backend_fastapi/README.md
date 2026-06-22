@@ -31,6 +31,8 @@ El seed inicial se carga desde:
 
 ```text
 ../base_conocimiento/data/medicamentos.json
+../base_conocimiento/data/fuentes.json
+../base_conocimiento/data/relaciones_farmacologicas.json
 ```
 
 La carga se ejecuta automaticamente al iniciar el backend si la tabla esta vacia.
@@ -66,7 +68,10 @@ Endpoint principal:
 ```text
 GET /buscar?q=medicamento para fiebre
 GET /agente/buscar?q=para que sirve paracetamol
+GET /base-conocimiento/resumen
+GET /base-conocimiento/fuentes
+GET /base-conocimiento/relaciones
 ```
 
 `/buscar` devuelve resultados semanticos estructurados.
-`/agente/buscar` analiza la consulta, detecta intencion y genera una respuesta de apoyo academico basada en la base de conocimiento.
+`/agente/buscar` analiza la consulta, detecta intencion, usa relaciones semanticas y genera una respuesta de apoyo academico basada en la base de conocimiento.

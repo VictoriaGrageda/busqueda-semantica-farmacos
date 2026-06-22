@@ -48,9 +48,9 @@ busqueda-semantica-farmacos/
 - Aplicacion movil: implementada con Flutter en `frontend_movil/`.
 - Backend: implementado con FastAPI en `backend_fastapi/`.
 - Base de datos: PostgreSQL con extension pgvector.
-- Base de conocimiento: seed inicial en `base_conocimiento/data/`.
+- Base de conocimiento: medicamentos, fuentes y relaciones semanticas en `base_conocimiento/data/`.
 - Busqueda semantica: busqueda vectorial con pgvector + coincidencia aproximada.
-- Agente inteligente: endpoint `/agente/buscar` que analiza la intencion de la consulta, recupera informacion de la base de conocimiento y genera una respuesta trazable.
+- Agente inteligente: endpoint `/agente/buscar` que analiza la intencion de la consulta, recupera informacion de la base de conocimiento, usa relaciones semanticas y genera una respuesta trazable.
 
 La base de conocimiento actual es de prototipo y se carga automaticamente en PostgreSQL al iniciar el backend si la tabla esta vacia. Para produccion debe ampliarse con fuentes oficiales seleccionadas como Vademecum, LINAME, FTN o AGEMED, segun el alcance definido del proyecto.
 
@@ -97,6 +97,7 @@ Prueba:
 http://127.0.0.1:8000/
 http://127.0.0.1:8000/buscar?q=medicamento%20para%20fiebre
 http://127.0.0.1:8000/agente/buscar?q=para%20que%20sirve%20paracetamol
+http://127.0.0.1:8000/base-conocimiento/resumen
 ```
 
 ## Correr frontend

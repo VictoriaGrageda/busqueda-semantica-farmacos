@@ -23,7 +23,9 @@ def get_db() -> Generator[Session, None, None]:
 
 
 def init_database() -> None:
+    from app.models.knowledge_source import KnowledgeSource  # noqa: F401
     from app.models.medicine import Medicine  # noqa: F401
+    from app.models.semantic_relation import SemanticRelation  # noqa: F401
 
     with engine.begin() as connection:
         connection.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
