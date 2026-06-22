@@ -1,16 +1,34 @@
 # frontend_movil
 
-A new Flutter project.
+Aplicacion Flutter del buscador farmacologico.
 
-## Getting Started
+## Carpetas principales
 
-This project is a starting point for a Flutter application.
+- `lib/app/`: widget raiz y tema visual.
+- `lib/config/`: configuracion de entorno, como la URL del backend.
+- `lib/models/`: modelos que representan la respuesta de la API.
+- `lib/screens/`: pantallas completas de la aplicacion.
+- `lib/services/`: clientes HTTP e integraciones externas.
+- `lib/widgets/`: componentes visuales reutilizables.
+- `test/`: pruebas de widgets.
 
-A few resources to get you started if this is your first Flutter project:
+## Comandos
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```powershell
+flutter pub get
+flutter run -d chrome
+flutter test
+flutter analyze
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+El backend por defecto se espera en:
+
+```text
+http://127.0.0.1:8000
+```
+
+Puedes cambiarlo con:
+
+```powershell
+flutter run -d chrome --dart-define=API_BASE_URL=http://127.0.0.1:8000
+```

@@ -1,0 +1,44 @@
+class MedicineResult {
+  const MedicineResult({
+    required this.score,
+    required this.name,
+    required this.activeIngredient,
+    required this.pharmacologicalGroup,
+    required this.indications,
+    required this.contraindications,
+    required this.adverseReactions,
+    required this.administrationRoutes,
+    required this.pharmaceuticalForms,
+  });
+
+  final double score;
+  final String name;
+  final String activeIngredient;
+  final String pharmacologicalGroup;
+  final List<String> indications;
+  final List<String> contraindications;
+  final List<String> adverseReactions;
+  final List<String> administrationRoutes;
+  final List<String> pharmaceuticalForms;
+
+  factory MedicineResult.fromJson(Map<String, dynamic> json) {
+    return MedicineResult(
+      score: (json['puntaje'] as num).toDouble(),
+      name: json['medicamento'] as String,
+      activeIngredient: json['principio_activo'] as String,
+      pharmacologicalGroup: json['grupo_farmacologico'] as String,
+      indications: _stringList(json['indicaciones']),
+      contraindications: _stringList(json['contraindicaciones']),
+      adverseReactions: _stringList(json['reacciones_adversas']),
+      administrationRoutes: _stringList(json['via_administracion']),
+      pharmaceuticalForms: _stringList(json['forma_farmaceutica']),
+    );
+  }
+
+  static List<String> _stringList(Object? value) {
+    if (value is! List) {
+      return const [];
+    }
+    return value.map((item) => item.toString()).toList();
+  }
+}
