@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../models/medicine_result.dart';
+import '../../models/search_response.dart';
 import '../../services/farmaco_api_service.dart';
+import '../../widgets/agent_summary_card.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/medicine_result_card.dart';
 import '../../widgets/search_input.dart';
@@ -18,6 +20,7 @@ class _SearchPageState extends State<SearchPage> {
   final FarmacoApiService _apiService = FarmacoApiService();
 
   List<MedicineResult> _results = const [];
+  SearchResponse? _agentResponse;
   String _message = '';
   bool _isLoading = false;
 
@@ -27,6 +30,7 @@ class _SearchPageState extends State<SearchPage> {
     if (query.isEmpty) {
       setState(() {
         _results = const [];
+        _agentResponse = null;
         _message = 'Ingrese una consulta farmacologica.';
       });
       return;
@@ -38,10 +42,11 @@ class _SearchPageState extends State<SearchPage> {
     });
 
     try {
-      final response = await _apiService.search(query);
+      final response = await _apiService.searchWithAgent(query);
 
       setState(() {
         _results = response.results;
+        _agentResponse = response;
         _message = response.results.isEmpty
             ? 'No se encontro informacion relacionada con la consulta.'
             : '';
@@ -49,6 +54,7 @@ class _SearchPageState extends State<SearchPage> {
     } catch (_) {
       setState(() {
         _results = const [];
+        _agentResponse = null;
         _message = 'No se pudo conectar con el backend.';
       });
     } finally {
@@ -90,13 +96,23 @@ class _SearchPageState extends State<SearchPage> {
               const SizedBox(height: 20),
               if (_message.isNotEmpty) EmptyState(message: _message),
               if (_isLoading) const LinearProgressIndicator(),
-              if (_results.isNotEmpty)
+              if (_agentResponse != null)
                 Expanded(
                   child: ListView.separated(
-                    itemCount: _results.length,
+                    itemCount: _results.length + 1,
                     separatorBuilder: (_, _) => const SizedBox(height: 12),
                     itemBuilder: (context, index) {
-                      return MedicineResultCard(result: _results[index]);
+                      if (index == 0) {
+                        final agentResponse = _agentResponse!;
+                        return AgentSummaryCard(
+                          answer: agentResponse.agentAnswer,
+                          queryType: agentResponse.queryType,
+                          recommendations: agentResponse.recommendations,
+                          warning: agentResponse.warning,
+                        );
+                      }
+
+                      return MedicineResultCard(result: _results[index - 1]);
                     },
                   ),
                 ),

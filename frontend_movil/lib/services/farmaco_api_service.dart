@@ -12,9 +12,9 @@ class FarmacoApiService {
   final http.Client _client;
   final String baseUrl;
 
-  Future<SearchResponse> search(String query) async {
+  Future<SearchResponse> searchWithAgent(String query) async {
     final uri = Uri.parse(
-      '$baseUrl/buscar',
+      '$baseUrl/agente/buscar',
     ).replace(queryParameters: {'q': query});
 
     final response = await _client.get(uri);

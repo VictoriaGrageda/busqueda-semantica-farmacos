@@ -12,6 +12,12 @@ Aplicacion Flutter del buscador farmacologico.
 - `lib/widgets/`: componentes visuales reutilizables.
 - `test/`: pruebas de widgets.
 
+La pantalla principal consulta el endpoint del agente semantico:
+
+```text
+GET /agente/buscar?q=consulta
+```
+
 ## Comandos
 
 ```powershell
@@ -31,4 +37,10 @@ Puedes cambiarlo con:
 
 ```powershell
 flutter run -d chrome --dart-define=API_BASE_URL=http://127.0.0.1:8000
+```
+
+Antes de ejecutar la app movil, levanta backend y base de datos desde la raiz:
+
+```powershell
+docker compose up --build
 ```

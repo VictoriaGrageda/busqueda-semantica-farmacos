@@ -39,6 +39,12 @@ class MedicineResultCard extends StatelessWidget {
               title: 'Grupo farmacologico',
               content: result.pharmacologicalGroup,
             ),
+            if (result.actionMechanism != null &&
+                result.actionMechanism!.isNotEmpty)
+              InfoRow(
+                title: 'Mecanismo de accion',
+                content: result.actionMechanism!,
+              ),
             InfoRow(
               title: 'Indicaciones',
               content: result.indications.join(', '),
@@ -51,6 +57,11 @@ class MedicineResultCard extends StatelessWidget {
               title: 'Reacciones adversas',
               content: result.adverseReactions.join(', '),
             ),
+            if (result.interactions.isNotEmpty)
+              InfoRow(
+                title: 'Interacciones',
+                content: result.interactions.join(', '),
+              ),
             InfoRow(
               title: 'Via de administracion',
               content: result.administrationRoutes.join(', '),
@@ -59,6 +70,8 @@ class MedicineResultCard extends StatelessWidget {
               title: 'Forma farmaceutica',
               content: result.pharmaceuticalForms.join(', '),
             ),
+            if (result.sources.isNotEmpty)
+              InfoRow(title: 'Fuentes', content: result.sources.join(', ')),
           ],
         ),
       ),
