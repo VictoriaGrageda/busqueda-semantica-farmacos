@@ -107,6 +107,7 @@ class _SearchPageState extends State<SearchPage> {
                         return AgentSummaryCard(
                           answer: agentResponse.agentAnswer,
                           queryType: agentResponse.queryType,
+                          contextRelations: agentResponse.contextRelations,
                           recommendations: agentResponse.recommendations,
                           warning: agentResponse.warning,
                         );

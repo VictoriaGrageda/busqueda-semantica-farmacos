@@ -8,6 +8,7 @@ class SearchResponse {
     required this.results,
     required this.queryType,
     required this.agentAnswer,
+    required this.contextRelations,
     required this.recommendations,
     required this.warning,
   });
@@ -18,6 +19,7 @@ class SearchResponse {
   final List<MedicineResult> results;
   final String queryType;
   final String agentAnswer;
+  final List<String> contextRelations;
   final List<String> recommendations;
   final String warning;
 
@@ -30,6 +32,7 @@ class SearchResponse {
       resultCount: json['cantidad_resultados'] as int,
       queryType: json['tipo_consulta'] as String? ?? 'consulta_general',
       agentAnswer: json['respuesta_agente'] as String? ?? '',
+      contextRelations: _relationList(json['relaciones_contexto']),
       recommendations: _stringList(json['recomendaciones']),
       warning: json['advertencia'] as String? ?? '',
       results: resultsJson is List
@@ -48,5 +51,18 @@ class SearchResponse {
       return const [];
     }
     return value.map((item) => item.toString()).toList();
+  }
+
+  static List<String> _relationList(Object? value) {
+    if (value is! List) {
+      return const [];
+    }
+
+    return value.whereType<Map<String, dynamic>>().map((item) {
+      final origin = item['origen'] ?? '';
+      final relation = item['tipo_relacion'] ?? '';
+      final target = item['destino'] ?? '';
+      return '$origin $relation $target';
+    }).toList();
   }
 }

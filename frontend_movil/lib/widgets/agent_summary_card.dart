@@ -4,6 +4,7 @@ class AgentSummaryCard extends StatelessWidget {
   const AgentSummaryCard({
     required this.answer,
     required this.queryType,
+    required this.contextRelations,
     required this.recommendations,
     required this.warning,
     super.key,
@@ -11,6 +12,7 @@ class AgentSummaryCard extends StatelessWidget {
 
   final String answer;
   final String queryType;
+  final List<String> contextRelations;
   final List<String> recommendations;
   final String warning;
 
@@ -34,6 +36,15 @@ class AgentSummaryCard extends StatelessWidget {
               'Tipo de consulta: $queryType',
               style: const TextStyle(fontWeight: FontWeight.w600),
             ),
+            if (contextRelations.isNotEmpty) ...[
+              const SizedBox(height: 10),
+              const Text(
+                'Relaciones semanticas usadas',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 4),
+              for (final relation in contextRelations) Text('- $relation'),
+            ],
             if (recommendations.isNotEmpty) ...[
               const SizedBox(height: 10),
               const Text(
