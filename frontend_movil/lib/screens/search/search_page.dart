@@ -48,7 +48,7 @@ class _SearchPageState extends State<SearchPage> {
         _results = response.results;
         _agentResponse = response;
         _message = response.results.isEmpty
-            ? 'No se encontro informacion relacionada con la consulta.'
+            ? 'No se encontro informacion relacionada con la consulta relacionada.'
             : '';
       });
     } catch (_) {
