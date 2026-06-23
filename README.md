@@ -48,11 +48,11 @@ busqueda-semantica-farmacos/
 - Aplicacion movil: implementada con Flutter en `frontend_movil/`.
 - Backend: implementado con FastAPI en `backend_fastapi/`.
 - Base de datos: PostgreSQL con extension pgvector.
-- Base de conocimiento: medicamentos, fuentes y relaciones semanticas en `base_conocimiento/data/`.
-- Busqueda semantica: busqueda vectorial con pgvector + coincidencia aproximada.
+- Base de conocimiento: manuales PDF procesados, fuentes y relaciones semanticas.
+- Busqueda semantica: busqueda vectorial sobre chunks de manuales con pgvector.
 - Agente inteligente: endpoint `/agente/buscar` que analiza la intencion de la consulta, recupera informacion de la base de conocimiento, usa relaciones semanticas y genera una respuesta trazable.
 
-La base de conocimiento actual es de prototipo y se carga automaticamente en PostgreSQL al iniciar el backend si la tabla esta vacia. Para produccion debe ampliarse con fuentes oficiales seleccionadas como Vademecum, LINAME, FTN o AGEMED, segun el alcance definido del proyecto.
+La base de conocimiento actual se construye desde PDFs farmacologicos ubicados en `base_conocimiento/sources/farmacologicas/manuales/`. Para produccion debe ampliarse con fuentes oficiales seleccionadas como Vademecum, LINAME, FTN o AGEMED, segun el alcance definido del proyecto.
 
 ## Arrancar prototipo completo
 
@@ -66,7 +66,13 @@ Esto levanta:
 
 - PostgreSQL + pgvector en `localhost:5432`.
 - Backend FastAPI en `http://127.0.0.1:8000`.
-- Seed inicial desde `base_conocimiento/data/medicamentos.json`.
+- Seed inicial de fuentes y relaciones semanticas desde `base_conocimiento/data/`.
+
+Para procesar y cargar manuales PDF de `base_conocimiento/sources/farmacologicas/manuales/`:
+
+```powershell
+docker compose exec backend python scripts/ingest_knowledge_sources.py
+```
 
 Luego, en otra terminal:
 

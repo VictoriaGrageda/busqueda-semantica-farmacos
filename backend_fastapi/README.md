@@ -1,6 +1,6 @@
 # backend_fastapi
 
-API REST con FastAPI para buscar medicamentos en la base de conocimiento.
+API REST con FastAPI para consultar una base de conocimiento farmacologica.
 
 ## Carpetas principales
 
@@ -19,23 +19,47 @@ API REST con FastAPI para buscar medicamentos en la base de conocimiento.
 
 El backend usa PostgreSQL con `pgvector`.
 
-Tabla principal:
+Tablas principales:
 
 ```text
-medicines
+knowledge_documents
+knowledge_chunks
+knowledge_sources
+semantic_relations
 ```
 
-Incluye datos farmacologicos estructurados y un campo `embedding` para busqueda vectorial.
+`knowledge_chunks` incluye fragmentos extraidos de manuales y un campo `embedding` para busqueda vectorial.
 
-El seed inicial se carga desde:
+El seed inicial de metadatos se carga desde:
 
 ```text
-../base_conocimiento/data/medicamentos.json
 ../base_conocimiento/data/fuentes.json
 ../base_conocimiento/data/relaciones_farmacologicas.json
 ```
 
-La carga se ejecuta automaticamente al iniciar el backend si la tabla esta vacia.
+La carga documental se realiza con el pipeline de ingesta de PDFs.
+
+## Ingesta de manuales PDF
+
+Los PDFs farmacologicos deben estar en:
+
+```text
+../base_conocimiento/sources/farmacologicas/manuales/
+```
+
+Para extraer texto, generar chunks, detectar entidades iniciales y cargar los embeddings en PostgreSQL:
+
+```powershell
+docker compose exec backend python scripts/ingest_knowledge_sources.py
+```
+
+El resultado queda en:
+
+```text
+../base_conocimiento/processed/text/
+../base_conocimiento/processed/chunks/
+../base_conocimiento/processed/entities/
+```
 
 ## Correr con Docker
 

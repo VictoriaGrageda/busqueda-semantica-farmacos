@@ -23,6 +23,8 @@ def get_db() -> Generator[Session, None, None]:
 
 
 def init_database() -> None:
+    from app.models.knowledge_chunk import KnowledgeChunk  # noqa: F401
+    from app.models.knowledge_document import KnowledgeDocument  # noqa: F401
     from app.models.knowledge_source import KnowledgeSource  # noqa: F401
     from app.models.medicine import Medicine  # noqa: F401
     from app.models.semantic_relation import SemanticRelation  # noqa: F401
@@ -37,5 +39,11 @@ def init_database() -> None:
             text(
                 "CREATE INDEX IF NOT EXISTS ix_medicines_embedding_hnsw "
                 "ON medicines USING hnsw (embedding vector_cosine_ops)"
+            )
+        )
+        connection.execute(
+            text(
+                "CREATE INDEX IF NOT EXISTS ix_knowledge_chunks_embedding_hnsw "
+                "ON knowledge_chunks USING hnsw (embedding vector_cosine_ops)"
             )
         )

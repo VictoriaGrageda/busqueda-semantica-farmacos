@@ -63,9 +63,15 @@ class SemanticMedicineSearchEngine:
     def _fuzzy_name_score(self, normalized_query: str, medicine: dict) -> float:
         name = normalize_text(medicine["medicamento"])
         active_ingredient = normalize_text(medicine["principio_activo"])
+
+        if name in normalized_query or active_ingredient in normalized_query:
+            return 1
+
         score = max(
             fuzz.ratio(normalized_query, name),
             fuzz.ratio(normalized_query, active_ingredient),
+            fuzz.partial_ratio(normalized_query, name),
+            fuzz.partial_ratio(normalized_query, active_ingredient),
         )
         normalized_score = score / 100
         return normalized_score if normalized_score >= 0.75 else 0

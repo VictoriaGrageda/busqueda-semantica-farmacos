@@ -22,6 +22,7 @@ class KnowledgeBaseSummaryResponse(BaseModel):
     medicamentos: int
     fuentes: int
     relaciones_semanticas: int
+    documentos_fuente: int
     descripcion: str
 
 

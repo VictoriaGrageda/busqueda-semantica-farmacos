@@ -21,8 +21,8 @@ def knowledge_base_summary(
     return KnowledgeBaseSummaryResponse(
         **repository.summary(),
         descripcion=(
-            "Base de conocimiento semantica con medicamentos, fuentes y relaciones "
-            "farmacologicas para alimentar el agente de busqueda."
+            "Base de conocimiento semantica basada en documentos fuente, chunks "
+            "vectorizados, fuentes y relaciones farmacologicas."
         ),
     )
 
@@ -50,8 +50,8 @@ def knowledge_base(db: Session = Depends(get_db)) -> KnowledgeBaseResponse:
     summary = KnowledgeBaseSummaryResponse(
         **repository.summary(),
         descripcion=(
-            "Base de conocimiento semantica con medicamentos, fuentes y relaciones "
-            "farmacologicas para alimentar el agente de busqueda."
+            "Base de conocimiento semantica basada en documentos fuente, chunks "
+            "vectorizados, fuentes y relaciones farmacologicas."
         ),
     )
 

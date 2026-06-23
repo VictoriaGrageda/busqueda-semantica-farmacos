@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
 
+from app.models.knowledge_document import KnowledgeDocument
 from app.models.knowledge_source import KnowledgeSource
 from app.models.medicine import Medicine
 from app.models.semantic_relation import SemanticRelation
@@ -64,4 +65,5 @@ class KnowledgeRepository:
             "medicamentos": self._db.query(Medicine).count(),
             "fuentes": self._db.query(KnowledgeSource).count(),
             "relaciones_semanticas": self._db.query(SemanticRelation).count(),
+            "documentos_fuente": self._db.query(KnowledgeDocument).count(),
         }

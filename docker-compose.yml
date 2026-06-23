@@ -3,15 +3,15 @@ services:
     image: pgvector/pgvector:pg16
     container_name: farmacos_postgres
     environment:
-      POSTGRES_DB: farmacos_db
-      POSTGRES_USER: farmacos_user
-      POSTGRES_PASSWORD: farmacos_password
+      POSTGRES_DB: ${POSTGRES_DB:-farmacos_db}
+      POSTGRES_USER: ${POSTGRES_USER:-farmacos_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-farmacos_password}
     ports:
-      - "5432:5432"
+      - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U farmacos_user -d farmacos_db"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-farmacos_user} -d ${POSTGRES_DB:-farmacos_db}"]
       interval: 5s
       timeout: 5s
       retries: 10
@@ -22,9 +22,11 @@ services:
       dockerfile: backend_fastapi/Dockerfile
     container_name: farmacos_backend
     environment:
-      DATABASE_URL: postgresql+psycopg://farmacos_user:farmacos_password@db:5432/farmacos_db
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-farmacos_user}:${POSTGRES_PASSWORD:-farmacos_password}@db:5432/${POSTGRES_DB:-farmacos_db}
     ports:
       - "8000:8000"
+    volumes:
+      - ./base_conocimiento:/app/base_conocimiento
     depends_on:
       db:
         condition: service_healthy

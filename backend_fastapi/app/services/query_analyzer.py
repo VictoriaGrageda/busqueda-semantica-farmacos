@@ -3,8 +3,8 @@ from app.services.text_normalizer import normalize_text
 
 class QueryAnalyzer:
     _INTENT_KEYWORDS = {
-        "indicaciones": ["sirve", "uso", "indicacion", "para que", "trata"],
         "contraindicaciones": ["contraindicacion", "no tomar", "evitar", "riesgo"],
+        "indicaciones": ["sirve", "uso", "indicacion", "para que", "trata"],
         "reacciones_adversas": ["efecto", "adverso", "secundario", "reaccion"],
         "interacciones": ["interaccion", "combinar", "mezclar", "junto"],
         "via_administracion": ["via", "administracion", "tomar", "oral"],
