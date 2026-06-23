@@ -9,6 +9,7 @@ class SearchResponse {
     required this.queryType,
     required this.agentAnswer,
     required this.contextRelations,
+    required this.documentContext,
     required this.recommendations,
     required this.warning,
   });
@@ -20,6 +21,7 @@ class SearchResponse {
   final String queryType;
   final String agentAnswer;
   final List<String> contextRelations;
+  final List<String> documentContext;
   final List<String> recommendations;
   final String warning;
 
@@ -33,6 +35,7 @@ class SearchResponse {
       queryType: json['tipo_consulta'] as String? ?? 'consulta_general',
       agentAnswer: json['respuesta_agente'] as String? ?? '',
       contextRelations: _relationList(json['relaciones_contexto']),
+      documentContext: _documentContextList(json['documentos_contexto']),
       recommendations: _stringList(json['recomendaciones']),
       warning: json['advertencia'] as String? ?? '',
       results: resultsJson is List
@@ -63,6 +66,20 @@ class SearchResponse {
       final relation = item['tipo_relacion'] ?? '';
       final target = item['destino'] ?? '';
       return '$origin $relation $target';
+    }).toList();
+  }
+
+  static List<String> _documentContextList(Object? value) {
+    if (value is! List) {
+      return const [];
+    }
+
+    return value.whereType<Map<String, dynamic>>().map((item) {
+      final document = item['documento'] ?? 'Documento';
+      final pageStart = item['pagina_inicio'] ?? '?';
+      final pageEnd = item['pagina_fin'] ?? '?';
+      final snippet = item['fragmento'] ?? '';
+      return '$document (paginas $pageStart-$pageEnd): $snippet';
     }).toList();
   }
 }
