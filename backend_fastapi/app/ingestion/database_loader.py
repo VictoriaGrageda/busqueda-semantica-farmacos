@@ -4,7 +4,9 @@ from pathlib import Path
 from sqlalchemy.orm import Session
 
 from app.core.config import PROCESSED_CHUNKS_PATH
+from app.ingestion.medicine_extractor import extract_medicines_from_processed_texts
 from app.repositories.document_repository import DocumentRepository
+from app.repositories.medicine_repository import MedicineRepository
 from app.services.embedding_service import generate_embedding
 
 
@@ -55,3 +57,22 @@ def load_processed_chunks_to_database(
 
     db.commit()
     return summary
+
+
+def load_extracted_medicines_to_database(db: Session) -> dict:
+    repository = MedicineRepository(db)
+    medicines = extract_medicines_from_processed_texts()
+    deleted = repository.delete_all()
+
+    for medicine in medicines:
+        repository.add(
+            medicine_data=medicine,
+            document=medicine["documento_busqueda"],
+            embedding=generate_embedding(medicine["documento_busqueda"]),
+        )
+
+    db.commit()
+    return {
+        "eliminados": deleted,
+        "insertados": len(medicines),
+    }

@@ -10,6 +10,11 @@ class MedicineRepository:
     def count(self) -> int:
         return self._db.query(Medicine).count()
 
+    def delete_all(self) -> int:
+        deleted = self._db.query(Medicine).delete()
+        self._db.flush()
+        return deleted
+
     def list_all(self) -> list[dict]:
         medicines = self._db.query(Medicine).order_by(Medicine.medicamento.asc()).all()
         return [medicine.to_dict(score=0) for medicine in medicines]
