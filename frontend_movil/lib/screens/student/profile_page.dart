@@ -7,13 +7,13 @@ class ProfilePage extends StatelessWidget {
   const ProfilePage({
     required this.favoriteCount,
     required this.historyCount,
-    required this.recentCount,
+    required this.onSettingsTap,
     super.key,
   });
 
   final int favoriteCount;
   final int historyCount;
-  final int recentCount;
+  final VoidCallback onSettingsTap;
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class ProfilePage extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.18),
+                        color: Colors.white.withOpacity(0.2),
                         shape: BoxShape.circle,
                       ),
                       child: const Icon(
@@ -53,7 +53,7 @@ class ProfilePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Estudiante de medicina',
+                            'Estudiante de Medicina',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,
@@ -62,7 +62,7 @@ class ProfilePage extends StatelessWidget {
                           ),
                           SizedBox(height: 4),
                           Text(
-                            'Modo estudiante',
+                            'estudiante@gmail.com',
                             style: TextStyle(color: Colors.white70),
                           ),
                         ],
@@ -89,22 +89,13 @@ class ProfilePage extends StatelessWidget {
                           color: AppTheme.primary,
                         ),
                       ),
-                      VerticalDivider(width: 1),
+                      const VerticalDivider(width: 1),
                       Expanded(
                         child: _ProfileMetric(
                           icon: Icons.history,
                           value: '$historyCount',
                           label: 'Busquedas',
                           color: AppTheme.secondary,
-                        ),
-                      ),
-                      VerticalDivider(width: 1),
-                      Expanded(
-                        child: _ProfileMetric(
-                          icon: Icons.medication_outlined,
-                          value: '$recentCount',
-                          label: 'Recientes',
-                          color: AppTheme.accent,
                         ),
                       ),
                     ],
@@ -116,97 +107,61 @@ class ProfilePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                _ProfileSectionTitle('Cuenta'),
-                SizedBox(height: 10),
-                _ProfileAction(
-                  icon: Icons.account_circle_outlined,
-                  title: 'Informacion de la cuenta',
-                  subtitle: 'Se conectara con Google mas adelante',
-                  color: AppTheme.accent,
-                ),
-                SizedBox(height: 12),
-                _ProfileAction(
-                  icon: Icons.school_outlined,
-                  title: 'Rol actual',
-                  subtitle: 'Estudiante, sin panel administrativo',
-                  color: AppTheme.secondary,
-                ),
-                SizedBox(height: 22),
-                _ProfileSectionTitle('Preferencias'),
-                SizedBox(height: 10),
+              children: [
                 _ProfileAction(
                   icon: Icons.settings_outlined,
                   title: 'Configuracion',
                   subtitle: 'Personaliza tu experiencia',
                   color: AppTheme.primary,
+                  onTap: onSettingsTap,
                 ),
-                SizedBox(height: 12),
-                _ProfileAction(
-                  icon: Icons.notifications_outlined,
-                  title: 'Notificaciones',
-                  subtitle: 'Recordatorios y alertas academicas pendientes',
-                  color: AppTheme.warning,
-                ),
-                SizedBox(height: 12),
-                _ProfileAction(
-                  icon: Icons.language_outlined,
-                  title: 'Idioma y region',
-                  subtitle: 'Espanol, Bolivia',
-                  color: AppTheme.secondary,
-                ),
-                SizedBox(height: 22),
-                _ProfileSectionTitle('Seguridad'),
-                SizedBox(height: 10),
-                _ProfileAction(
+                const SizedBox(height: 12),
+                const _ProfileAction(
                   icon: Icons.verified_user_outlined,
-                  title: 'Privacidad y seguridad',
-                  subtitle: 'Gestion de datos cuando exista login',
+                  title: 'Privacidad y Seguridad',
+                  subtitle: 'Gestiona tus datos',
                   color: AppTheme.secondary,
                 ),
-                SizedBox(height: 12),
-                _ProfileAction(
-                  icon: Icons.login_outlined,
-                  title: 'Inicio de sesion con Google',
-                  subtitle: 'Pendiente para una siguiente etapa',
-                  color: AppTheme.primary,
-                ),
-                SizedBox(height: 22),
-                _ProfileSectionTitle('Informacion'),
-                SizedBox(height: 10),
-                _ProfileAction(
-                  icon: Icons.info_outline,
-                  title: 'Acerca de FarmaEdu',
-                  subtitle: 'Apoyo academico para busqueda farmacologica',
+                const SizedBox(height: 12),
+                const _ProfileAction(
+                  icon: Icons.account_circle_outlined,
+                  title: 'Informacion de la cuenta',
+                  subtitle: 'Datos de Google',
                   color: AppTheme.accent,
                 ),
-                SizedBox(height: 24),
-                Text(
-                  'FarmaEdu Movil v1.0.0',
+                const SizedBox(height: 24),
+                SizedBox(
+                  width: double.infinity,
+                  child: TextButton.icon(
+                    onPressed: () {},
+                    icon: const Icon(Icons.logout),
+                    label: const Text('Cerrar Sesion'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: AppTheme.danger,
+                      backgroundColor: AppTheme.danger.withOpacity(0.1),
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 28),
+                const Text(
+                  'FarmacoBolivia v1.0.0',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 12, color: Color(0xFF64748B)),
+                ),
+                const SizedBox(height: 4),
+                const Text(
+                  'Desarrollado para estudiantes de medicina',
+                  textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 12, color: Color(0xFF64748B)),
                 ),
               ],
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _ProfileSectionTitle extends StatelessWidget {
-  const _ProfileSectionTitle(this.text);
-
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: Text(
-        text,
-        style: Theme.of(context).textTheme.titleMedium,
       ),
     );
   }
@@ -233,17 +188,11 @@ class _ProfileMetric extends StatelessWidget {
         children: [
           Icon(icon, color: color, size: 18),
           const SizedBox(height: 4),
-          Text(
-            value,
-            style: Theme.of(context).textTheme.titleLarge,
-          ),
+          Text(value, style: Theme.of(context).textTheme.titleLarge),
           Text(
             label,
             style: TextStyle(
-              color: Theme.of(context)
-                  .colorScheme
-                  .onSurface
-                  .withOpacity(0.58),
+              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.58),
               fontSize: 12,
             ),
           ),
@@ -259,17 +208,20 @@ class _ProfileAction extends StatelessWidget {
     required this.title,
     required this.subtitle,
     required this.color,
+    this.onTap,
   });
 
   final IconData icon;
   final String title;
   final String subtitle;
   final Color color;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
+        onTap: onTap,
         leading: Container(
           padding: const EdgeInsets.all(9),
           decoration: BoxDecoration(
@@ -280,7 +232,6 @@ class _ProfileAction extends StatelessWidget {
         ),
         title: Text(title, style: Theme.of(context).textTheme.titleMedium),
         subtitle: Text(subtitle),
-        trailing: const Icon(Icons.chevron_right),
       ),
     );
   }

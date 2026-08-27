@@ -25,7 +25,7 @@ class StudentHistoryItem {
 class StudentReferenceData {
   static const categories = [
     StudentCategory(
-      name: 'Analgesicos',
+      name: 'Analgesicos y Antipireticos',
       icon: 'pill',
       query: 'medicamento para fiebre y dolor',
     ),
@@ -40,9 +40,19 @@ class StudentReferenceData {
       query: 'antiinflamatorio para dolor',
     ),
     StudentCategory(
+      name: 'Antihipertensivos',
+      icon: 'heart-pulse',
+      query: 'medicamento para hipertension arterial',
+    ),
+    StudentCategory(
       name: 'Gastrointestinales',
       icon: 'droplet',
       query: 'medicamento para gastritis',
+    ),
+    StudentCategory(
+      name: 'Antidiabeticos',
+      icon: 'syringe',
+      query: 'medicamento para diabetes tipo 2',
     ),
   ];
 }

@@ -140,9 +140,9 @@ class StudentDashboardPage extends StatelessWidget {
                   itemCount: StudentReferenceData.categories.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    mainAxisSpacing: 12,
-                    crossAxisSpacing: 12,
-                    childAspectRatio: 1.35,
+                    mainAxisSpacing: 10,
+                    crossAxisSpacing: 10,
+                    childAspectRatio: 2.05,
                   ),
                   itemBuilder: (context, index) {
                     final category = StudentReferenceData.categories[index];
@@ -221,12 +221,11 @@ class _CategoryCard extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(14),
         child: Padding(
-          padding: const EdgeInsets.all(14),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          child: Row(
             children: [
               Container(
-                padding: const EdgeInsets.all(9),
+                padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   color: AppTheme.primary.withOpacity(0.12),
                   borderRadius: BorderRadius.circular(10),
@@ -234,17 +233,20 @@ class _CategoryCard extends StatelessWidget {
                 child: const Icon(
                   Icons.medication_outlined,
                   color: AppTheme.primary,
-                  size: 22,
+                  size: 20,
                 ),
               ),
-              const Spacer(),
-              Text(
-                title,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      fontSize: 14,
-                    ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  title,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        fontSize: 13,
+                        height: 1.15,
+                      ),
+                ),
               ),
             ],
           ),

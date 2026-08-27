@@ -8,10 +8,18 @@ import 'favorites_page.dart';
 import 'history_page.dart';
 import 'medicine_detail_page.dart';
 import 'profile_page.dart';
+import 'settings_page.dart';
 import 'student_dashboard_page.dart';
 
 class StudentShell extends StatefulWidget {
-  const StudentShell({super.key});
+  const StudentShell({
+    required this.darkModeEnabled,
+    required this.onDarkModeChanged,
+    super.key,
+  });
+
+  final bool darkModeEnabled;
+  final ValueChanged<bool> onDarkModeChanged;
 
   @override
   State<StudentShell> createState() => _StudentShellState();
@@ -110,6 +118,18 @@ class _StudentShellState extends State<StudentShell> {
     return '${medicine.name}|${medicine.activeIngredient}'.toLowerCase();
   }
 
+  void _openSettings() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => SettingsPage(
+          darkModeEnabled: widget.darkModeEnabled,
+          onDarkModeChanged: widget.onDarkModeChanged,
+          onClearHistory: _clearHistory,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final pages = [
@@ -138,7 +158,7 @@ class _StudentShellState extends State<StudentShell> {
       ProfilePage(
         favoriteCount: _favoritesByKey.length,
         historyCount: _history.length,
-        recentCount: _recentMedicines.length,
+        onSettingsTap: _openSettings,
       ),
     ];
 

@@ -12,6 +12,12 @@ class AppTheme {
   static const Color warning = Color(0xFFF4A261);
   static const Color danger = Color(0xFFE76F51);
 
+  static const Color darkBackground = Color(0xFF0F1419);
+  static const Color darkForeground = Color(0xFFFFFFFF);
+  static const Color darkSurface = Color(0xFF1E2938);
+  static const Color darkBorder = Color(0xFF374151);
+  static const Color darkMuted = Color(0xFF2A3F54);
+
   static ThemeData get light {
     final colorScheme = ColorScheme.fromSeed(
       seedColor: primary,
@@ -96,6 +102,94 @@ class AppTheme {
           fontWeight: FontWeight.w700,
         ),
         bodyMedium: TextStyle(color: foreground, fontSize: 14),
+      ),
+    );
+  }
+
+  static ThemeData get dark {
+    final colorScheme = ColorScheme.fromSeed(
+      seedColor: primary,
+      brightness: Brightness.dark,
+      primary: primary,
+      secondary: secondary,
+      surface: darkSurface,
+      error: danger,
+    );
+
+    return ThemeData(
+      useMaterial3: true,
+      colorScheme: colorScheme,
+      scaffoldBackgroundColor: darkBackground,
+      primaryColor: primary,
+      fontFamily: 'Roboto',
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.transparent,
+        foregroundColor: darkForeground,
+        elevation: 0,
+        centerTitle: false,
+      ),
+      cardTheme: CardThemeData(
+        color: darkSurface,
+        elevation: 0,
+        margin: EdgeInsets.zero,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(14),
+          side: const BorderSide(color: darkBorder),
+        ),
+      ),
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        backgroundColor: darkSurface,
+        selectedItemColor: primary,
+        unselectedItemColor: Color(0xFFD1D5DB),
+        type: BottomNavigationBarType.fixed,
+        elevation: 12,
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: primary,
+          foregroundColor: Colors.white,
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(14),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: darkMuted,
+        hintStyle: const TextStyle(color: Color(0xFFD1D5DB)),
+        prefixIconColor: const Color(0xFFD1D5DB),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: darkBorder),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: darkBorder),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: primary, width: 2),
+        ),
+      ),
+      textTheme: const TextTheme(
+        headlineSmall: TextStyle(
+          color: darkForeground,
+          fontSize: 24,
+          fontWeight: FontWeight.w700,
+        ),
+        titleLarge: TextStyle(
+          color: darkForeground,
+          fontSize: 20,
+          fontWeight: FontWeight.w700,
+        ),
+        titleMedium: TextStyle(
+          color: darkForeground,
+          fontSize: 16,
+          fontWeight: FontWeight.w700,
+        ),
+        bodyMedium: TextStyle(color: darkForeground, fontSize: 14),
       ),
     );
   }
