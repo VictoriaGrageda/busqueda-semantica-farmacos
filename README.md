@@ -65,7 +65,7 @@ docker compose up --build
 
 Esto levanta:
 
-- PostgreSQL + pgvector. En la configuracion local actual se publica en `localhost:5433`.
+- PostgreSQL + pgvector. Por defecto se publica en `localhost:5432`; se puede cambiar con `POSTGRES_PORT` en `.env`.
 - Backend FastAPI en `http://127.0.0.1:8000`.
 - Seed inicial de fuentes y relaciones semanticas desde `base_conocimiento/data/`.
 

@@ -81,7 +81,7 @@ docker compose up --build
 Servicios:
 
 ```text
-PostgreSQL + pgvector: localhost:5433 en la configuracion local actual
+PostgreSQL + pgvector: localhost:5432 por defecto; se puede cambiar con POSTGRES_PORT en .env
 FastAPI: http://127.0.0.1:8000
 ```
 
@@ -92,7 +92,7 @@ py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -U pip
 pip install -r requirements.txt
-set DATABASE_URL=postgresql+psycopg://postgres:2346@localhost:5433/postgres
+$env:DATABASE_URL="postgresql+psycopg://farmacos_user:farmacos_password@localhost:5432/farmacos_db"
 python -m uvicorn app.main:app --reload
 ```
 
