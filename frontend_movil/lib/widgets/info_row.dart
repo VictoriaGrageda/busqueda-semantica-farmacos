@@ -8,15 +8,21 @@ class InfoRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textColor = Theme.of(context).colorScheme.onSurface;
+    final mutedColor = textColor.withOpacity(0.68);
+
     return Padding(
       padding: const EdgeInsets.only(top: 8),
       child: RichText(
         text: TextSpan(
-          style: const TextStyle(fontSize: 15, color: Colors.white),
+          style: TextStyle(fontSize: 14, color: mutedColor, height: 1.35),
           children: [
             TextSpan(
               text: '$title: ',
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                color: textColor,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             TextSpan(text: content),
           ],

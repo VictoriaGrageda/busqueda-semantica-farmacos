@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../screens/search/search_page.dart';
+import '../screens/student/student_shell.dart';
 import 'theme/app_theme.dart';
 
 class FarmacoSearchApp extends StatelessWidget {
@@ -10,9 +10,9 @@ class FarmacoSearchApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Busqueda farmacologica',
-      theme: AppTheme.dark,
-      home: const SearchPage(),
+      title: 'FarmaEdu Movil',
+      theme: AppTheme.light,
+      home: const StudentShell(),
     );
   }
 }
