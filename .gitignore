@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.log
 .env
+.idea/
 
 backend_fastapi/.venv/
 

@@ -57,7 +57,7 @@ py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -U pip
 pip install -r requirements.txt
-set DATABASE_URL=postgresql+psycopg://farmacos_user:farmacos_password@localhost:5432/farmacos_db
+$env:DATABASE_URL="postgresql+psycopg://farmacos_user:farmacos_password@localhost:5432/farmacos_db"
 python -m uvicorn app.main:app --reload
 ```
 
