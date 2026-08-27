@@ -6,6 +6,6 @@ Al iniciar la API se ejecuta:
 
 1. Creacion de la extension `vector`.
 2. Creacion de tablas si no existen.
-3. Seed inicial desde `base_conocimiento/data/medicamentos.json` cuando la tabla esta vacia.
+3. Seed inicial de fuentes y relaciones semanticas cuando las tablas estan vacias.
 
-La tabla principal es `medicines`.
+Las tablas documentales principales son `knowledge_documents` y `knowledge_chunks`.

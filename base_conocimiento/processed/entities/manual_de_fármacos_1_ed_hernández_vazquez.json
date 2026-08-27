@@ -1,0 +1,3162 @@
+[
+  {
+    "chunk_index": 0,
+    "page_start": 1,
+    "page_end": 2,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 1,
+    "page_start": 2,
+    "page_end": 3,
+    "campos_detectados": [
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 2,
+    "page_start": 3,
+    "page_end": 4,
+    "campos_detectados": [
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 3,
+    "page_start": 4,
+    "page_end": 5,
+    "campos_detectados": []
+  },
+  {
+    "chunk_index": 4,
+    "page_start": 5,
+    "page_end": 6,
+    "campos_detectados": [
+      "dosis",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 5,
+    "page_start": 6,
+    "page_end": 7,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 6,
+    "page_start": 7,
+    "page_end": 8,
+    "campos_detectados": [
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 7,
+    "page_start": 8,
+    "page_end": 9,
+    "campos_detectados": [
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 8,
+    "page_start": 9,
+    "page_end": 10,
+    "campos_detectados": [
+      "farmacocinetica",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 9,
+    "page_start": 10,
+    "page_end": 11,
+    "campos_detectados": [
+      "farmacocinetica",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 10,
+    "page_start": 11,
+    "page_end": 12,
+    "campos_detectados": [
+      "farmacocinetica"
+    ]
+  },
+  {
+    "chunk_index": 11,
+    "page_start": 12,
+    "page_end": 13,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 12,
+    "page_start": 13,
+    "page_end": 14,
+    "campos_detectados": [
+      "farmacocinetica"
+    ]
+  },
+  {
+    "chunk_index": 13,
+    "page_start": 14,
+    "page_end": 15,
+    "campos_detectados": [
+      "farmacocinetica"
+    ]
+  },
+  {
+    "chunk_index": 14,
+    "page_start": 15,
+    "page_end": 16,
+    "campos_detectados": [
+      "dosis",
+      "indicaciones",
+      "reacciones_adversas"
+    ]
+  },
+  {
+    "chunk_index": 15,
+    "page_start": 16,
+    "page_end": 17,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "mecanismo_accion",
+      "reacciones_adversas",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 16,
+    "page_start": 17,
+    "page_end": 18,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 17,
+    "page_start": 18,
+    "page_end": 19,
+    "campos_detectados": [
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 18,
+    "page_start": 19,
+    "page_end": 20,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 19,
+    "page_start": 20,
+    "page_end": 21,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "mecanismo_accion"
+    ]
+  },
+  {
+    "chunk_index": 20,
+    "page_start": 21,
+    "page_end": 22,
+    "campos_detectados": [
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 21,
+    "page_start": 22,
+    "page_end": 23,
+    "campos_detectados": [
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 22,
+    "page_start": 23,
+    "page_end": 25,
+    "campos_detectados": [
+      "dosis",
+      "indicaciones",
+      "mecanismo_accion",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 23,
+    "page_start": 25,
+    "page_end": 27,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 24,
+    "page_start": 27,
+    "page_end": 29,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "mecanismo_accion",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 25,
+    "page_start": 29,
+    "page_end": 31,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "mecanismo_accion"
+    ]
+  },
+  {
+    "chunk_index": 26,
+    "page_start": 31,
+    "page_end": 32,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 27,
+    "page_start": 32,
+    "page_end": 34,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 28,
+    "page_start": 34,
+    "page_end": 36,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "mecanismo_accion",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 29,
+    "page_start": 36,
+    "page_end": 37,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "mecanismo_accion",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 30,
+    "page_start": 37,
+    "page_end": 38,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 31,
+    "page_start": 38,
+    "page_end": 40,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 32,
+    "page_start": 40,
+    "page_end": 43,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 33,
+    "page_start": 43,
+    "page_end": 45,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 34,
+    "page_start": 45,
+    "page_end": 47,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 35,
+    "page_start": 47,
+    "page_end": 49,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 36,
+    "page_start": 49,
+    "page_end": 51,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 37,
+    "page_start": 51,
+    "page_end": 53,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 38,
+    "page_start": 53,
+    "page_end": 54,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 39,
+    "page_start": 54,
+    "page_end": 55,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 40,
+    "page_start": 55,
+    "page_end": 56,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 41,
+    "page_start": 56,
+    "page_end": 58,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 42,
+    "page_start": 58,
+    "page_end": 60,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 43,
+    "page_start": 60,
+    "page_end": 61,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 44,
+    "page_start": 61,
+    "page_end": 63,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 45,
+    "page_start": 63,
+    "page_end": 65,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 46,
+    "page_start": 65,
+    "page_end": 67,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 47,
+    "page_start": 67,
+    "page_end": 69,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 48,
+    "page_start": 69,
+    "page_end": 71,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "reacciones_adversas",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 49,
+    "page_start": 71,
+    "page_end": 73,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "reacciones_adversas",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 50,
+    "page_start": 73,
+    "page_end": 75,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 51,
+    "page_start": 75,
+    "page_end": 77,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 52,
+    "page_start": 77,
+    "page_end": 78,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 53,
+    "page_start": 78,
+    "page_end": 79,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 54,
+    "page_start": 79,
+    "page_end": 80,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 55,
+    "page_start": 80,
+    "page_end": 81,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 56,
+    "page_start": 81,
+    "page_end": 83,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 57,
+    "page_start": 83,
+    "page_end": 85,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 58,
+    "page_start": 85,
+    "page_end": 87,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 59,
+    "page_start": 87,
+    "page_end": 89,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 60,
+    "page_start": 89,
+    "page_end": 90,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 61,
+    "page_start": 90,
+    "page_end": 92,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 62,
+    "page_start": 92,
+    "page_end": 95,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 63,
+    "page_start": 95,
+    "page_end": 98,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 64,
+    "page_start": 98,
+    "page_end": 100,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 65,
+    "page_start": 100,
+    "page_end": 102,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 66,
+    "page_start": 102,
+    "page_end": 104,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 67,
+    "page_start": 104,
+    "page_end": 106,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 68,
+    "page_start": 106,
+    "page_end": 108,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 69,
+    "page_start": 108,
+    "page_end": 110,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 70,
+    "page_start": 110,
+    "page_end": 112,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 71,
+    "page_start": 112,
+    "page_end": 114,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 72,
+    "page_start": 114,
+    "page_end": 116,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 73,
+    "page_start": 116,
+    "page_end": 119,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 74,
+    "page_start": 119,
+    "page_end": 121,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 75,
+    "page_start": 121,
+    "page_end": 123,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 76,
+    "page_start": 123,
+    "page_end": 125,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 77,
+    "page_start": 125,
+    "page_end": 127,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 78,
+    "page_start": 127,
+    "page_end": 129,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 79,
+    "page_start": 129,
+    "page_end": 131,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 80,
+    "page_start": 131,
+    "page_end": 133,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 81,
+    "page_start": 133,
+    "page_end": 135,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 82,
+    "page_start": 135,
+    "page_end": 137,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 83,
+    "page_start": 137,
+    "page_end": 138,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 84,
+    "page_start": 138,
+    "page_end": 140,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 85,
+    "page_start": 140,
+    "page_end": 142,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 86,
+    "page_start": 142,
+    "page_end": 144,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 87,
+    "page_start": 144,
+    "page_end": 145,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 88,
+    "page_start": 145,
+    "page_end": 146,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 89,
+    "page_start": 146,
+    "page_end": 148,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 90,
+    "page_start": 148,
+    "page_end": 150,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 91,
+    "page_start": 150,
+    "page_end": 152,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 92,
+    "page_start": 152,
+    "page_end": 154,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 93,
+    "page_start": 154,
+    "page_end": 156,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 94,
+    "page_start": 156,
+    "page_end": 158,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 95,
+    "page_start": 158,
+    "page_end": 160,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 96,
+    "page_start": 160,
+    "page_end": 162,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 97,
+    "page_start": 162,
+    "page_end": 163,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 98,
+    "page_start": 163,
+    "page_end": 164,
+    "campos_detectados": [
+      "dosis",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 99,
+    "page_start": 164,
+    "page_end": 166,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 100,
+    "page_start": 166,
+    "page_end": 167,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 101,
+    "page_start": 167,
+    "page_end": 168,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 102,
+    "page_start": 168,
+    "page_end": 170,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 103,
+    "page_start": 170,
+    "page_end": 171,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 104,
+    "page_start": 171,
+    "page_end": 172,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 105,
+    "page_start": 172,
+    "page_end": 174,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 106,
+    "page_start": 174,
+    "page_end": 175,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 107,
+    "page_start": 175,
+    "page_end": 177,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 108,
+    "page_start": 177,
+    "page_end": 178,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 109,
+    "page_start": 178,
+    "page_end": 180,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 110,
+    "page_start": 180,
+    "page_end": 182,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 111,
+    "page_start": 182,
+    "page_end": 184,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 112,
+    "page_start": 184,
+    "page_end": 186,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 113,
+    "page_start": 186,
+    "page_end": 188,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 114,
+    "page_start": 188,
+    "page_end": 189,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 115,
+    "page_start": 189,
+    "page_end": 190,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 116,
+    "page_start": 190,
+    "page_end": 192,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 117,
+    "page_start": 192,
+    "page_end": 194,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 118,
+    "page_start": 194,
+    "page_end": 196,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 119,
+    "page_start": 196,
+    "page_end": 198,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 120,
+    "page_start": 198,
+    "page_end": 200,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 121,
+    "page_start": 200,
+    "page_end": 201,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 122,
+    "page_start": 201,
+    "page_end": 203,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 123,
+    "page_start": 203,
+    "page_end": 204,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 124,
+    "page_start": 204,
+    "page_end": 205,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 125,
+    "page_start": 205,
+    "page_end": 207,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 126,
+    "page_start": 207,
+    "page_end": 209,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 127,
+    "page_start": 209,
+    "page_end": 211,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 128,
+    "page_start": 211,
+    "page_end": 213,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 129,
+    "page_start": 213,
+    "page_end": 215,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 130,
+    "page_start": 215,
+    "page_end": 216,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 131,
+    "page_start": 216,
+    "page_end": 217,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 132,
+    "page_start": 217,
+    "page_end": 218,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 133,
+    "page_start": 218,
+    "page_end": 220,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 134,
+    "page_start": 220,
+    "page_end": 221,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 135,
+    "page_start": 221,
+    "page_end": 222,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 136,
+    "page_start": 222,
+    "page_end": 223,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 137,
+    "page_start": 223,
+    "page_end": 224,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "reacciones_adversas",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 138,
+    "page_start": 224,
+    "page_end": 225,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 139,
+    "page_start": 225,
+    "page_end": 226,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 140,
+    "page_start": 226,
+    "page_end": 227,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 141,
+    "page_start": 227,
+    "page_end": 228,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 142,
+    "page_start": 228,
+    "page_end": 230,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 143,
+    "page_start": 230,
+    "page_end": 232,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 144,
+    "page_start": 232,
+    "page_end": 233,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 145,
+    "page_start": 233,
+    "page_end": 235,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 146,
+    "page_start": 235,
+    "page_end": 237,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 147,
+    "page_start": 237,
+    "page_end": 238,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 148,
+    "page_start": 238,
+    "page_end": 239,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 149,
+    "page_start": 239,
+    "page_end": 240,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 150,
+    "page_start": 240,
+    "page_end": 242,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 151,
+    "page_start": 242,
+    "page_end": 244,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 152,
+    "page_start": 244,
+    "page_end": 246,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 153,
+    "page_start": 246,
+    "page_end": 248,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 154,
+    "page_start": 248,
+    "page_end": 250,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 155,
+    "page_start": 250,
+    "page_end": 252,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 156,
+    "page_start": 252,
+    "page_end": 253,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 157,
+    "page_start": 253,
+    "page_end": 254,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 158,
+    "page_start": 254,
+    "page_end": 255,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 159,
+    "page_start": 255,
+    "page_end": 257,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 160,
+    "page_start": 257,
+    "page_end": 258,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 161,
+    "page_start": 258,
+    "page_end": 259,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 162,
+    "page_start": 259,
+    "page_end": 260,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 163,
+    "page_start": 260,
+    "page_end": 261,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 164,
+    "page_start": 261,
+    "page_end": 262,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 165,
+    "page_start": 262,
+    "page_end": 263,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 166,
+    "page_start": 263,
+    "page_end": 265,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 167,
+    "page_start": 265,
+    "page_end": 267,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 168,
+    "page_start": 267,
+    "page_end": 269,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 169,
+    "page_start": 269,
+    "page_end": 271,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 170,
+    "page_start": 271,
+    "page_end": 273,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 171,
+    "page_start": 273,
+    "page_end": 275,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 172,
+    "page_start": 275,
+    "page_end": 277,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 173,
+    "page_start": 277,
+    "page_end": 279,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 174,
+    "page_start": 279,
+    "page_end": 281,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 175,
+    "page_start": 281,
+    "page_end": 283,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 176,
+    "page_start": 283,
+    "page_end": 285,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 177,
+    "page_start": 285,
+    "page_end": 287,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 178,
+    "page_start": 287,
+    "page_end": 289,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 179,
+    "page_start": 289,
+    "page_end": 291,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 180,
+    "page_start": 291,
+    "page_end": 292,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 181,
+    "page_start": 292,
+    "page_end": 294,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 182,
+    "page_start": 294,
+    "page_end": 296,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 183,
+    "page_start": 296,
+    "page_end": 298,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 184,
+    "page_start": 298,
+    "page_end": 300,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 185,
+    "page_start": 300,
+    "page_end": 301,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 186,
+    "page_start": 301,
+    "page_end": 302,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 187,
+    "page_start": 302,
+    "page_end": 305,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 188,
+    "page_start": 305,
+    "page_end": 307,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 189,
+    "page_start": 307,
+    "page_end": 308,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 190,
+    "page_start": 308,
+    "page_end": 310,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 191,
+    "page_start": 310,
+    "page_end": 311,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 192,
+    "page_start": 311,
+    "page_end": 312,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 193,
+    "page_start": 312,
+    "page_end": 313,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 194,
+    "page_start": 313,
+    "page_end": 316,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 195,
+    "page_start": 316,
+    "page_end": 318,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "mecanismo_accion",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 196,
+    "page_start": 318,
+    "page_end": 319,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 197,
+    "page_start": 319,
+    "page_end": 320,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 198,
+    "page_start": 320,
+    "page_end": 321,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 199,
+    "page_start": 321,
+    "page_end": 322,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 200,
+    "page_start": 322,
+    "page_end": 323,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 201,
+    "page_start": 323,
+    "page_end": 324,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 202,
+    "page_start": 324,
+    "page_end": 326,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 203,
+    "page_start": 326,
+    "page_end": 327,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 204,
+    "page_start": 327,
+    "page_end": 328,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 205,
+    "page_start": 328,
+    "page_end": 330,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 206,
+    "page_start": 330,
+    "page_end": 331,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 207,
+    "page_start": 331,
+    "page_end": 333,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 208,
+    "page_start": 333,
+    "page_end": 334,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 209,
+    "page_start": 334,
+    "page_end": 336,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 210,
+    "page_start": 336,
+    "page_end": 337,
+    "campos_detectados": [
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 211,
+    "page_start": 337,
+    "page_end": 339,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 212,
+    "page_start": 339,
+    "page_end": 341,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 213,
+    "page_start": 341,
+    "page_end": 343,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 214,
+    "page_start": 343,
+    "page_end": 345,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 215,
+    "page_start": 345,
+    "page_end": 346,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 216,
+    "page_start": 346,
+    "page_end": 348,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 217,
+    "page_start": 348,
+    "page_end": 350,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 218,
+    "page_start": 350,
+    "page_end": 351,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 219,
+    "page_start": 351,
+    "page_end": 352,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 220,
+    "page_start": 352,
+    "page_end": 353,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 221,
+    "page_start": 353,
+    "page_end": 355,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 222,
+    "page_start": 355,
+    "page_end": 357,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 223,
+    "page_start": 357,
+    "page_end": 359,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 224,
+    "page_start": 359,
+    "page_end": 360,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 225,
+    "page_start": 360,
+    "page_end": 361,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 226,
+    "page_start": 361,
+    "page_end": 363,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 227,
+    "page_start": 363,
+    "page_end": 365,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 228,
+    "page_start": 365,
+    "page_end": 366,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 229,
+    "page_start": 366,
+    "page_end": 369,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 230,
+    "page_start": 369,
+    "page_end": 370,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 231,
+    "page_start": 370,
+    "page_end": 371,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 232,
+    "page_start": 371,
+    "page_end": 372,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 233,
+    "page_start": 372,
+    "page_end": 373,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 234,
+    "page_start": 373,
+    "page_end": 374,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 235,
+    "page_start": 374,
+    "page_end": 375,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 236,
+    "page_start": 375,
+    "page_end": 376,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 237,
+    "page_start": 376,
+    "page_end": 377,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 238,
+    "page_start": 377,
+    "page_end": 378,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "mecanismo_accion"
+    ]
+  },
+  {
+    "chunk_index": 239,
+    "page_start": 378,
+    "page_end": 379,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "mecanismo_accion",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 240,
+    "page_start": 379,
+    "page_end": 380,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 241,
+    "page_start": 380,
+    "page_end": 381,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 242,
+    "page_start": 381,
+    "page_end": 382,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 243,
+    "page_start": 382,
+    "page_end": 383,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 244,
+    "page_start": 383,
+    "page_end": 384,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 245,
+    "page_start": 384,
+    "page_end": 385,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 246,
+    "page_start": 385,
+    "page_end": 386,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "mecanismo_accion",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 247,
+    "page_start": 386,
+    "page_end": 387,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 248,
+    "page_start": 387,
+    "page_end": 388,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 249,
+    "page_start": 388,
+    "page_end": 390,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 250,
+    "page_start": 390,
+    "page_end": 391,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 251,
+    "page_start": 391,
+    "page_end": 392,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 252,
+    "page_start": 392,
+    "page_end": 393,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones"
+    ]
+  },
+  {
+    "chunk_index": 253,
+    "page_start": 393,
+    "page_end": 394,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 254,
+    "page_start": 394,
+    "page_end": 395,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 255,
+    "page_start": 395,
+    "page_end": 396,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 256,
+    "page_start": 396,
+    "page_end": 397,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 257,
+    "page_start": 397,
+    "page_end": 398,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 258,
+    "page_start": 398,
+    "page_end": 399,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 259,
+    "page_start": 399,
+    "page_end": 400,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 260,
+    "page_start": 400,
+    "page_end": 401,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 261,
+    "page_start": 401,
+    "page_end": 402,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 262,
+    "page_start": 402,
+    "page_end": 403,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 263,
+    "page_start": 403,
+    "page_end": 404,
+    "campos_detectados": [
+      "contraindicaciones",
+      "dosis",
+      "farmacocinetica",
+      "indicaciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 264,
+    "page_start": 404,
+    "page_end": 405,
+    "campos_detectados": [
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 265,
+    "page_start": 405,
+    "page_end": 407,
+    "campos_detectados": [
+      "contraindicaciones",
+      "farmacocinetica",
+      "indicaciones",
+      "interacciones",
+      "via_administracion"
+    ]
+  },
+  {
+    "chunk_index": 266,
+    "page_start": 407,
+    "page_end": 408,
+    "campos_detectados": [
+      "dosis",
+      "farmacocinetica"
+    ]
+  },
+  {
+    "chunk_index": 267,
+    "page_start": 408,
+    "page_end": 409,
+    "campos_detectados": [
+      "dosis"
+    ]
+  },
+  {
+    "chunk_index": 268,
+    "page_start": 409,
+    "page_end": 410,
+    "campos_detectados": [
+      "dosis"
+    ]
+  },
+  {
+    "chunk_index": 269,
+    "page_start": 410,
+    "page_end": 411,
+    "campos_detectados": [
+      "dosis",
+      "indicaciones"
+    ]
+  },
+  {
+    "chunk_index": 270,
+    "page_start": 411,
+    "page_end": 412,
+    "campos_detectados": []
+  },
+  {
+    "chunk_index": 271,
+    "page_start": 412,
+    "page_end": 413,
+    "campos_detectados": [
+      "dosis"
+    ]
+  },
+  {
+    "chunk_index": 272,
+    "page_start": 413,
+    "page_end": 414,
+    "campos_detectados": [
+      "dosis"
+    ]
+  },
+  {
+    "chunk_index": 273,
+    "page_start": 414,
+    "page_end": 415,
+    "campos_detectados": [
+      "dosis"
+    ]
+  },
+  {
+    "chunk_index": 274,
+    "page_start": 415,
+    "page_end": 416,
+    "campos_detectados": [
+      "dosis"
+    ]
+  },
+  {
+    "chunk_index": 275,
+    "page_start": 416,
+    "page_end": 417,
+    "campos_detectados": [
+      "dosis"
+    ]
+  }
+]

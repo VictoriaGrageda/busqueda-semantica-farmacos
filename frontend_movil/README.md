@@ -18,6 +18,14 @@ La pantalla principal consulta el endpoint del agente semantico:
 GET /agente/buscar?q=consulta
 ```
 
+La respuesta muestra:
+
+- respuesta generada por el agente
+- tipo de consulta detectada
+- relaciones semanticas usadas
+- recomendaciones
+- resultados farmacologicos estructurados
+
 ## Comandos
 
 ```powershell

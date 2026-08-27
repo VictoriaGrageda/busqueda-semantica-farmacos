@@ -1,0 +1,33 @@
+{
+  "documentos": [
+    {
+      "titulo": "Guía de farmacos en urgencias - José Aguilar Reguero",
+      "ruta_pdf": "/app/base_conocimiento/sources/farmacologicas/manuales/Guía de farmacos en urgencias - José Aguilar Reguero.pdf",
+      "texto_procesado": "/app/base_conocimiento/processed/text/guía_de_farmacos_en_urgencias_josé_aguilar_reguero.txt",
+      "chunks_json": "/app/base_conocimiento/processed/chunks/guía_de_farmacos_en_urgencias_josé_aguilar_reguero.json",
+      "entidades_json": "/app/base_conocimiento/processed/entities/guía_de_farmacos_en_urgencias_josé_aguilar_reguero.json",
+      "paginas": 40,
+      "chunks": 38
+    },
+    {
+      "titulo": "Manual de farmacología médica 1° ed - Suárez 2006",
+      "ruta_pdf": "/app/base_conocimiento/sources/farmacologicas/manuales/Manual de farmacología médica 1° ed - Suárez 2006.pdf",
+      "texto_procesado": "/app/base_conocimiento/processed/text/manual_de_farmacología_médica_1_ed_suárez_2006.txt",
+      "chunks_json": "/app/base_conocimiento/processed/chunks/manual_de_farmacología_médica_1_ed_suárez_2006.json",
+      "entidades_json": "/app/base_conocimiento/processed/entities/manual_de_farmacología_médica_1_ed_suárez_2006.json",
+      "paginas": 239,
+      "chunks": 239
+    },
+    {
+      "titulo": "Manual de fármacos 1° ed - Hernández Vazquez",
+      "ruta_pdf": "/app/base_conocimiento/sources/farmacologicas/manuales/Manual de fármacos 1° ed - Hernández Vazquez.pdf",
+      "texto_procesado": "/app/base_conocimiento/processed/text/manual_de_fármacos_1_ed_hernández_vazquez.txt",
+      "chunks_json": "/app/base_conocimiento/processed/chunks/manual_de_fármacos_1_ed_hernández_vazquez.json",
+      "entidades_json": "/app/base_conocimiento/processed/entities/manual_de_fármacos_1_ed_hernández_vazquez.json",
+      "paginas": 417,
+      "chunks": 276
+    }
+  ],
+  "total_documentos": 3,
+  "total_chunks": 553
+}

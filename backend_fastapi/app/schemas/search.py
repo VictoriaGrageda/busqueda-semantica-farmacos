@@ -31,5 +31,7 @@ class SearchResponse(BaseModel):
 class AgentSearchResponse(SearchResponse):
     tipo_consulta: str
     respuesta_agente: str
+    relaciones_contexto: list[dict]
+    documentos_contexto: list[dict]
     recomendaciones: list[str]
     advertencia: str

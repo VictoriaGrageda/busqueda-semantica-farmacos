@@ -1,0 +1,74 @@
+[
+  {
+    "origen": "Paracetamol",
+    "tipo_relacion": "pertenece_a_grupo",
+    "destino": "Analgesico y antipiretico",
+    "descripcion": "Relacion entre medicamento y grupo farmacologico."
+  },
+  {
+    "origen": "Paracetamol",
+    "tipo_relacion": "indicado_para",
+    "destino": "fiebre",
+    "descripcion": "Relacion entre medicamento e indicacion terapeutica."
+  },
+  {
+    "origen": "Paracetamol",
+    "tipo_relacion": "indicado_para",
+    "destino": "dolor",
+    "descripcion": "Relacion entre medicamento e indicacion terapeutica."
+  },
+  {
+    "origen": "Ibuprofeno",
+    "tipo_relacion": "pertenece_a_grupo",
+    "destino": "Antiinflamatorio no esteroideo",
+    "descripcion": "Relacion entre medicamento y grupo farmacologico."
+  },
+  {
+    "origen": "Ibuprofeno",
+    "tipo_relacion": "indicado_para",
+    "destino": "inflamacion",
+    "descripcion": "Relacion entre medicamento e indicacion terapeutica."
+  },
+  {
+    "origen": "Ibuprofeno",
+    "tipo_relacion": "contraindicado_en",
+    "destino": "ulcera gastrica activa",
+    "descripcion": "Relacion entre medicamento y condicion de riesgo."
+  },
+  {
+    "origen": "Omeprazol",
+    "tipo_relacion": "pertenece_a_grupo",
+    "destino": "Inhibidor de la bomba de protones",
+    "descripcion": "Relacion entre medicamento y grupo farmacologico."
+  },
+  {
+    "origen": "Omeprazol",
+    "tipo_relacion": "indicado_para",
+    "destino": "gastritis",
+    "descripcion": "Relacion entre medicamento e indicacion terapeutica."
+  },
+  {
+    "origen": "Amoxicilina",
+    "tipo_relacion": "pertenece_a_grupo",
+    "destino": "Antibiotico betalactamico",
+    "descripcion": "Relacion entre medicamento y grupo farmacologico."
+  },
+  {
+    "origen": "Amoxicilina",
+    "tipo_relacion": "contraindicado_en",
+    "destino": "alergia a penicilinas",
+    "descripcion": "Relacion entre medicamento y condicion de riesgo."
+  },
+  {
+    "origen": "Metformina",
+    "tipo_relacion": "pertenece_a_grupo",
+    "destino": "Antidiabetico oral",
+    "descripcion": "Relacion entre medicamento y grupo farmacologico."
+  },
+  {
+    "origen": "Metformina",
+    "tipo_relacion": "indicado_para",
+    "destino": "diabetes mellitus tipo 2",
+    "descripcion": "Relacion entre medicamento e indicacion terapeutica."
+  }
+]

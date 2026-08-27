@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes.agent import router as agent_router
+from app.api.routes.knowledge_base import router as knowledge_base_router
 from app.api.routes.search import router as search_router
 from app.core.config import (
     API_DESCRIPTION,
@@ -41,6 +42,7 @@ def create_app() -> FastAPI:
 
     app.include_router(search_router)
     app.include_router(agent_router)
+    app.include_router(knowledge_base_router)
     return app
 
 
