@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../app/theme/app_theme.dart';
-import '../../data/student_mock_data.dart';
+import '../../data/student_reference_data.dart';
 import '../../models/medicine_result.dart';
 import '../../widgets/app_gradient_header.dart';
 import '../../widgets/medicine_result_card.dart';
@@ -9,11 +9,13 @@ import '../../widgets/section_title.dart';
 
 class StudentDashboardPage extends StatelessWidget {
   const StudentDashboardPage({
+    required this.recentMedicines,
     required this.onSearchTap,
     required this.onOpenMedicine,
     super.key,
   });
 
+  final List<MedicineResult> recentMedicines;
   final void Function([String? query]) onSearchTap;
   final ValueChanged<MedicineResult> onOpenMedicine;
 
@@ -135,7 +137,7 @@ class StudentDashboardPage extends StatelessWidget {
                 GridView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
-                  itemCount: StudentMockData.categories.length,
+                  itemCount: StudentReferenceData.categories.length,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     mainAxisSpacing: 12,
@@ -143,7 +145,7 @@ class StudentDashboardPage extends StatelessWidget {
                     childAspectRatio: 1.35,
                   ),
                   itemBuilder: (context, index) {
-                    final category = StudentMockData.categories[index];
+                    final category = StudentReferenceData.categories[index];
                     return _CategoryCard(
                       title: category.name,
                       onTap: () => onSearchTap(category.query),
@@ -156,7 +158,41 @@ class StudentDashboardPage extends StatelessWidget {
                   icon: Icons.trending_up,
                 ),
                 const SizedBox(height: 12),
-                for (final medicine in StudentMockData.recentMedicines) ...[
+                if (recentMedicines.isEmpty)
+                  Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(18),
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: AppTheme.primary.withOpacity(0.12),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: const Icon(
+                              Icons.manage_search,
+                              color: AppTheme.primary,
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Text(
+                              'Tus resultados recientes apareceran despues de una busqueda semantica.',
+                              style: TextStyle(
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .onSurface
+                                    .withOpacity(0.68),
+                                height: 1.35,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                for (final medicine in recentMedicines) ...[
                   MedicineResultCard(
                     result: medicine,
                     onTap: () => onOpenMedicine(medicine),

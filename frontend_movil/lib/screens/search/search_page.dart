@@ -9,15 +9,21 @@ import '../../widgets/empty_state.dart';
 import '../../widgets/medicine_result_card.dart';
 import '../../widgets/section_title.dart';
 
+typedef SearchCompleted = void Function(String query, SearchResponse response);
+
 class SearchPage extends StatefulWidget {
   const SearchPage({
     this.requestedQuery,
+    this.requestToken = 0,
     this.onOpenMedicine,
+    this.onSearchCompleted,
     super.key,
   });
 
   final String? requestedQuery;
+  final int requestToken;
   final ValueChanged<MedicineResult>? onOpenMedicine;
+  final SearchCompleted? onSearchCompleted;
 
   @override
   State<SearchPage> createState() => _SearchPageState();
@@ -37,16 +43,16 @@ class _SearchPageState extends State<SearchPage> {
   SearchResponse? _agentResponse;
   String _message = '';
   bool _isLoading = false;
-  String? _lastRequestedQuery;
+  int _lastRequestToken = 0;
 
   @override
   void didUpdateWidget(covariant SearchPage oldWidget) {
     super.didUpdateWidget(oldWidget);
     final query = widget.requestedQuery;
-    if (query == null || query == _lastRequestedQuery) {
+    if (query == null || widget.requestToken == _lastRequestToken) {
       return;
     }
-    _lastRequestedQuery = query;
+    _lastRequestToken = widget.requestToken;
     _controller.text = query;
     _search();
   }
@@ -76,6 +82,7 @@ class _SearchPageState extends State<SearchPage> {
             ? 'No se encontro informacion relacionada con la consulta.'
             : '';
       });
+      widget.onSearchCompleted?.call(query, response);
     } catch (_) {
       setState(() {
         _agentResponse = null;

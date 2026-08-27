@@ -1,30 +1,21 @@
 import 'package:flutter/material.dart';
 
-import '../../data/student_mock_data.dart';
 import '../../models/medicine_result.dart';
 import '../../widgets/app_gradient_header.dart';
 import '../../widgets/empty_state.dart';
 import '../../widgets/medicine_result_card.dart';
 
-class FavoritesPage extends StatefulWidget {
-  const FavoritesPage({required this.onOpenMedicine, super.key});
+class FavoritesPage extends StatelessWidget {
+  const FavoritesPage({
+    required this.favorites,
+    required this.onOpenMedicine,
+    required this.onRemoveFavorite,
+    super.key,
+  });
 
+  final List<MedicineResult> favorites;
   final ValueChanged<MedicineResult> onOpenMedicine;
-
-  @override
-  State<FavoritesPage> createState() => _FavoritesPageState();
-}
-
-class _FavoritesPageState extends State<FavoritesPage> {
-  late final List<MedicineResult> _favorites = [
-    ...StudentMockData.recentMedicines.take(2),
-  ];
-
-  void _remove(MedicineResult medicine) {
-    setState(() {
-      _favorites.remove(medicine);
-    });
-  }
+  final ValueChanged<MedicineResult> onRemoveFavorite;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +37,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
                   ),
                 ),
                 Text(
-                  '${_favorites.length}',
+                  '${favorites.length}',
                   style: const TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w800,
@@ -59,18 +50,18 @@ class _FavoritesPageState extends State<FavoritesPage> {
             child: ListView(
               padding: const EdgeInsets.all(20),
               children: [
-                if (_favorites.isEmpty)
+                if (favorites.isEmpty)
                   const EmptyState(
                     message:
-                        'Guarda medicamentos para acceder rapidamente desde aqui.',
+                        'Abre un resultado y marca el corazon para guardarlo aqui.',
                   ),
-                for (final medicine in _favorites) ...[
+                for (final medicine in favorites) ...[
                   MedicineResultCard(
                     result: medicine,
-                    onTap: () => widget.onOpenMedicine(medicine),
+                    onTap: () => onOpenMedicine(medicine),
                   ),
                   TextButton.icon(
-                    onPressed: () => _remove(medicine),
+                    onPressed: () => onRemoveFavorite(medicine),
                     icon: const Icon(Icons.delete_outline),
                     label: const Text('Eliminar de favoritos'),
                   ),

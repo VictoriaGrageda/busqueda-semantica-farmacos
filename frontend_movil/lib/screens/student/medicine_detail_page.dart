@@ -7,9 +7,16 @@ import '../../widgets/app_gradient_header.dart';
 import '../../widgets/medicine_result_card.dart';
 
 class MedicineDetailPage extends StatefulWidget {
-  const MedicineDetailPage({required this.medicine, super.key});
+  const MedicineDetailPage({
+    required this.medicine,
+    required this.isFavorite,
+    required this.onFavoriteChanged,
+    super.key,
+  });
 
   final MedicineResult medicine;
+  final bool isFavorite;
+  final ValueChanged<bool> onFavoriteChanged;
 
   @override
   State<MedicineDetailPage> createState() => _MedicineDetailPageState();
@@ -17,7 +24,7 @@ class MedicineDetailPage extends StatefulWidget {
 
 class _MedicineDetailPageState extends State<MedicineDetailPage> {
   final Set<String> _expandedSections = {'mecanismo', 'indicaciones'};
-  bool _isFavorite = false;
+  late bool _isFavorite = widget.isFavorite;
 
   void _toggleSection(String id) {
     setState(() {
@@ -112,6 +119,7 @@ class _MedicineDetailPageState extends State<MedicineDetailPage> {
                             setState(() {
                               _isFavorite = !_isFavorite;
                             });
+                            widget.onFavoriteChanged(_isFavorite);
                           },
                           icon: Icon(
                             _isFavorite

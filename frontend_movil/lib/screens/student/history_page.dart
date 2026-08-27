@@ -1,33 +1,23 @@
 import 'package:flutter/material.dart';
 
 import '../../app/theme/app_theme.dart';
-import '../../data/student_mock_data.dart';
+import '../../data/student_reference_data.dart';
 import '../../widgets/app_gradient_header.dart';
 import '../../widgets/empty_state.dart';
 
-class HistoryPage extends StatefulWidget {
-  const HistoryPage({required this.onSearchAgain, super.key});
+class HistoryPage extends StatelessWidget {
+  const HistoryPage({
+    required this.history,
+    required this.onSearchAgain,
+    required this.onRemoveItem,
+    required this.onClear,
+    super.key,
+  });
 
+  final List<StudentHistoryItem> history;
   final ValueChanged<String> onSearchAgain;
-
-  @override
-  State<HistoryPage> createState() => _HistoryPageState();
-}
-
-class _HistoryPageState extends State<HistoryPage> {
-  final List<StudentHistoryItem> _history = [...StudentMockData.history];
-
-  void _clear() {
-    setState(() {
-      _history.clear();
-    });
-  }
-
-  void _remove(StudentHistoryItem item) {
-    setState(() {
-      _history.remove(item);
-    });
-  }
+  final ValueChanged<StudentHistoryItem> onRemoveItem;
+  final VoidCallback onClear;
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +38,9 @@ class _HistoryPageState extends State<HistoryPage> {
                         ),
                   ),
                 ),
-                if (_history.isNotEmpty)
+                if (history.isNotEmpty)
                   TextButton(
-                    onPressed: _clear,
+                    onPressed: onClear,
                     child: const Text(
                       'Limpiar',
                       style: TextStyle(color: Colors.white),
@@ -63,11 +53,12 @@ class _HistoryPageState extends State<HistoryPage> {
             child: ListView(
               padding: const EdgeInsets.all(20),
               children: [
-                if (_history.isEmpty)
+                if (history.isEmpty)
                   const EmptyState(
-                    message: 'Tus busquedas recientes apareceran aqui.',
+                    message:
+                        'Tus busquedas reales apareceran aqui durante la sesion.',
                   ),
-                for (final item in _history) ...[
+                for (final item in history) ...[
                   Card(
                     child: Padding(
                       padding: const EdgeInsets.all(14),
@@ -122,7 +113,7 @@ class _HistoryPageState extends State<HistoryPage> {
                                 ),
                               ),
                               IconButton(
-                                onPressed: () => _remove(item),
+                                onPressed: () => onRemoveItem(item),
                                 icon: const Icon(Icons.delete_outline),
                               ),
                             ],
@@ -131,7 +122,7 @@ class _HistoryPageState extends State<HistoryPage> {
                           SizedBox(
                             width: double.infinity,
                             child: TextButton.icon(
-                              onPressed: () => widget.onSearchAgain(item.query),
+                              onPressed: () => onSearchAgain(item.query),
                               icon: const Icon(Icons.refresh),
                               label: const Text('Buscar de nuevo'),
                             ),
